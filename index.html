@@ -85,6 +85,11 @@ button:hover {
 .clear {
     background: #ff4d4d;
 }
+
+.span2 {
+    grid-column: span 2;
+    height: 100%;
+}
 </style>
 </head>
 
@@ -99,7 +104,7 @@ button:hover {
     <div class="buttons">
         <!-- Row 1 -->
         <button class="clear" onclick="clearDisplay()">C</button>
-        <button onclick="add('00')">00</button>
+        <button onclick="backspace()">⌫</button>
         <button onclick="add('.')">.</button>
         <button onclick="add('/')">÷</button>
 
@@ -124,8 +129,7 @@ button:hover {
         <!-- Row 5 -->
         <button onclick="add('0')">0</button>
         <button onclick="add('00')">00</button>
-        <button class="equal" onclick="calculate()">=</button>
-        <button onclick="backspace()">⌫</button>
+        <button class="equal span2" onclick="calculate()">=</button>
     </div>
 </div>
 
